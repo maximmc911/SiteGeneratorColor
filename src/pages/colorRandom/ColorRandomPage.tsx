@@ -7,8 +7,8 @@ import { GetColor } from "../../data/api";
 
 const ColorRandomPage = () => {
   const {t} = useTranslation();
-  const [makeColor, setMakeColor] = useState(`inherit`)
-  const [getColor, setGetColor] = useState(``)
+  const [makeColor, setMakeColor] = useState<string>(`inherit`)
+  const [getColor, setGetColor] = useState<string>(``)
   const HandleGenerationColor = () : void =>{
 
     const color = RandomGenerator()
@@ -17,12 +17,13 @@ const ColorRandomPage = () => {
       if (status == 200) {
       
         
-      setMakeColor((el) => el = color)
-      setGetColor((el)=> el= data.name.value  )
-   
+      setMakeColor(color)
+      setGetColor(data.name.value  )
+      
       
     }else{
-        setMakeColor((el) => el = color)
+      setGetColor(`не имеет точного названия` )
+        setMakeColor(color)
         
   
       }
