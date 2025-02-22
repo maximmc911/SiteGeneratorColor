@@ -3,6 +3,7 @@ import image from '../../public/logo/photo_2025-02-22_20-09-27.jpg'
 import ColorRandomPage from '../pages/colorRandom/ColorRandomPage';
 import GradientPage from '../pages/gradientColor/GradientPage';
 import  MainPage  from '../pages/main/MainPage';
+import { useTranslation } from 'react-i18next';
 
 interface objPages {
     id: number,
@@ -38,9 +39,10 @@ const MakePages: Array<objPages> =[
 ]
 
 export const MakeItemNavbar = () =>{
+    const {t} = useTranslation()
     return MakePages.map((el)=>(
-        <NavLink to={el.href} key={el.id}>
-            {typeof( el.name) === 'string' ? el.name : <el.name />}
+        <NavLink to={el.href} key={el.id} >
+            {typeof( el.name) === 'string' ? t(el.name) : <el.name />}
         </NavLink>
        
     ))
