@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@layer base {
+
+    @font-face {
+      font-family: 'PlayfairDisplayItalic';
+      font-style: normal;
+      src: url('../../public/font/PlayfairDisplay/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'PlayfairDisplay';
+      font-style: normal;
+      src: url('../../public/font/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    }
+
+
+  }
+
+
+
+  body {
+    font-family: 'PlayfairDisplayItalic', sans-serif;
+  }

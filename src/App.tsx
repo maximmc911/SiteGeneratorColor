@@ -1,11 +1,14 @@
+import { DarkMode } from "./components/darkMode/DarkMode";
 
-const App = () => {
-  return (
-    <div>App
 
-      <h1>Start Project</h1>
-    </div>
-  )
+function App() {
+
+
+ return (
+   <div className="min-h-screen text-black bg-white dark:bg-gray-800 dark:text-white">
+<DarkMode/>
+   </div>
+ );
 }
 
-export default App
+export default App;
