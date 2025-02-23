@@ -3,6 +3,7 @@ import ContentSection from "./ContentSection"
 import { RandomGenerator } from "../../mixin/mixin";
 import { useState } from "react";
 import { GetColor } from "../../data/api";
+import Button from "../../components/UI/Button";
 
 
 const ColorRandomPage = () => {
@@ -38,7 +39,7 @@ const ColorRandomPage = () => {
        <h1 className="text-2xl text-center">{t(`Генератор случайных цветов`)}</h1>
       <ContentSection/>
       <div className="flex flex-wrap items-center justify-center gap-5">
-        <button className="p-4 bg-green-500 cursor-pointer rounded-4xl" onClick={()=> HandleGenerationColor()}>{t('сгенерировать цвет')}</button>
+       <Button HandleGenerationColor={HandleGenerationColor} title={'сгенерировать цвет'}/>
     {
       makeColor=== "inherit" ? null :
         <div className="w-72 ">

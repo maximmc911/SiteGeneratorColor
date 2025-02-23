@@ -6,7 +6,7 @@ const MainPage = () => {
   return (
     <>
     <div className="flex flex-col gap-3 m-2">
-      <h1 className="text-2xl text-center">Генератор случайных цветов и линейных градиентов</h1>
+      <h1 className="text-2xl text-center">{t('Генератор случайных цветов и линейных градиентов')}</h1>
       <section className='flex flex-col gap-2.5'>
         <h2 className="text-xl">{t('История появления шестнадцатиричного представления цветов (HEX)')}</h2>
         <p>{t('текст')}</p>
