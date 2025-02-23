@@ -8,7 +8,7 @@ import Footer from "./components/footer/Footer";
 function App() {
 
  return (
-   <div className="flex flex-col justify-between min-h-screen text-black bg-white dark:bg-gray-800 dark:text-white">
+   <div className="flex flex-col justify-between min-h-screen text-black bg-white dark:bg-gray-800 dark:text-gray-300">
 <Navbar>
   {
     MakeItemNavbar()

@@ -9,7 +9,7 @@ const Navbar = ({children} : Props) => {
   return (
     <>
     
-    <nav className="flex items-center  justify-between p-2.5 bg-gray-600 text-white dark:bg-white dark:text-black max-sm:block  ">
+    <nav className="flex items-center  justify-between p-2.5 bg-gray-600 text-white dark:bg-gray-300 dark:text-black max-sm:block  ">
         <div className="" >
         <div className="hidden max-sm:flex max-sm:justify-between">
         <DarkMode/>
