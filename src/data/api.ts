@@ -10,8 +10,9 @@ export const GetColor = async (color : string , callback: (status: number , data
         const {data , status} = await axios.get(MakeApiColor(color));
 
 callback(status, data)
-    } catch (error) {
-        console.error(error);
+} catch (error) {
+    
+    callback(404, {})
         
     }
 }
