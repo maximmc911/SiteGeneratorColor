@@ -45,6 +45,9 @@
     "текст9" : "A random color generator is a simple yet powerful tool that can significantly simplify the creation of unique and diverse color schemes for various applications. It allows for the quick generation of random colors in the desired format, which can be used for many purposes, from designing user interfaces to generating random effects in games or artwork.",
     "сгенерировать цвет": "generate color",
     "цвет" : "color",
+    "закрыть" : "close" , 
+    "Узнать больше о генераторе" :"Find out more about the generator",
+
 
 
 
@@ -80,7 +83,12 @@
     "Генератор линейных и радиальных градиентов": "Generator of linear and radial gradients",
     "сгенерировать линейный градиент": "generate linear gradient",
     "сгенерировать радиальный градиент": "generate radial gradient",
-    "Генератор случайных цветов и линейных градиентов": "Generator of random colors and linear gradients"
+    "Генератор случайных цветов и линейных градиентов": "Generator of random colors and linear gradients",
+    "Генератор случайных цветов и градиентов": "Generator of random colors and gradients",
+    "Онлайн генератор случайных цветов и градиентов": "Online generator of random colors and gradients",
+    "Палитра для просмотра сгенерированного цвета": "Palette for viewing the generated color",
+    "Генератор линейных градиентов": "Linear Gradient Generator",
+    "Генератор радиальных градиентов": "Radial Gradient Generator"
 
 
 

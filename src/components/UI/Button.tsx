@@ -11,7 +11,7 @@ const Button = ({ HandleGenerationColor, title }: ButtonProps) => {
 
   return (
     <>
-      <button className="p-4 bg-green-500 cursor-pointer rounded-4xl" onClick={()=> HandleGenerationColor()}>{t(title)}</button>
+      <button className="p-4 bg-[#8BC34A] duration-100 cursor-pointer rounded-4xl hover:bg-[#7CB342] hover:duration-100" onClick={()=> HandleGenerationColor()}>{t(title)}</button>
     </>
   )
 }

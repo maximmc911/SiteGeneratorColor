@@ -1,26 +1,21 @@
-import React from 'react'
+
 import { DarkMode } from '../darkMode/DarkMode'
 import LangChoise from '../langChoise/LangChoise'
-interface Props {
-    children: React.ReactNode
-}
+import logo from '../../../public/logo/photo_2025-02-22_20-09-27.jpg'
 
-const Navbar = ({children} : Props) => {
+
+const Navbar = () => {
+
   return (
     <>
     
-    <nav className="flex items-center  justify-between p-2.5 bg-gray-600 text-white dark:bg-gray-300 dark:text-black max-sm:block  ">
-        <div className="" >
-        <div className="hidden max-sm:flex max-sm:justify-between">
-        <DarkMode/>
-        <LangChoise/>
-      </div>
-        </div>
-<div className="flex items-center gap-3 max-sm:justify-between">
-    
-      {children}
+    <nav className="flex items-center  justify-between p-2.5 bg-gray-600 text-white dark:bg-gray-300 dark:text-black  ">
+
+<div className="flex items-center gap-3">
+<img src={logo} alt="logo" className='w-16 rounded-full' />
+<p className='text-2xl'> PaletteGen  </p>
 </div>
-      <div className="flex items-center gap-5 max-sm:hidden">
+      <div className="flex items-center justify-end gap-5 max-sm:flex-col max-sm:gap-1.5">
         <DarkMode/>
         <LangChoise/>
       </div>

@@ -1,8 +1,8 @@
 import {  NavLink, Route } from 'react-router';
 import image from '../../public/logo/photo_2025-02-22_20-09-27.jpg'
-import ColorRandomPage from '../pages/colorRandom/ColorRandomPage';
-import GradientPage from '../pages/gradientColor/GradientPage';
-import  MainPage  from '../pages/main/MainPage';
+import ColorRandomPage from '../colorRandom/ColorRandomPage';
+import GradientPage from '../../src/pages/gradientColor/GradientPage';
+import  MainPage  from '../main/MainPage';
 import { useTranslation } from 'react-i18next';
 
 interface objPages {
